@@ -1,175 +1,176 @@
 goog.provide('com.app.core');
+var module$node_modules$react_adfit_web_component$dist$react_adfit_web_component=shadow.js.require("module$node_modules$react_adfit_web_component$dist$react_adfit_web_component", {});
 com.app.core.level = cljs.core.atom.cljs$core$IFn$_invoke$arity$1((1));
 com.app.core.game_state = cljs.core.atom.cljs$core$IFn$_invoke$arity$1(null);
 com.app.core.input = cljs.core.atom.cljs$core$IFn$_invoke$arity$1(cljs.core.PersistentVector.EMPTY);
 com.app.core.reset_stage = (function com$app$core$reset_stage(){
 cljs.core.reset_BANG_(com.app.core.input,cljs.core.PersistentVector.EMPTY);
 
-var curr = (function (){var G__32419 = cljs.core.deref(com.app.core.level);
-return (com.app.stage.stages.cljs$core$IFn$_invoke$arity$1 ? com.app.stage.stages.cljs$core$IFn$_invoke$arity$1(G__32419) : com.app.stage.stages.call(null,G__32419));
+var curr = (function (){var G__33522 = cljs.core.deref(com.app.core.level);
+return (com.app.stage.stages.cljs$core$IFn$_invoke$arity$1 ? com.app.stage.stages.cljs$core$IFn$_invoke$arity$1(G__33522) : com.app.stage.stages.call(null,G__33522));
 })();
 return cljs.core.reset_BANG_(com.app.core.game_state,com.app.generator.init_boards((curr.cljs$core$IFn$_invoke$arity$1 ? curr.cljs$core$IFn$_invoke$arity$1(new cljs.core.Keyword(null,"answer","answer",-742633163)) : curr.call(null,new cljs.core.Keyword(null,"answer","answer",-742633163))),(curr.cljs$core$IFn$_invoke$arity$1 ? curr.cljs$core$IFn$_invoke$arity$1(new cljs.core.Keyword(null,"maps","maps",-1711561134)) : curr.call(null,new cljs.core.Keyword(null,"maps","maps",-1711561134)))));
 });
 com.app.core.clear_stage_QMARK_ = (function com$app$core$clear_stage_QMARK_(){
-return cljs.core.every_QMARK_(new cljs.core.Keyword(null,"is_goalin","is_goalin",-1291824626),(function (){var fexpr__32420 = cljs.core.deref(com.app.core.game_state);
-return (fexpr__32420.cljs$core$IFn$_invoke$arity$1 ? fexpr__32420.cljs$core$IFn$_invoke$arity$1(new cljs.core.Keyword(null,"boards","boards",1912049694)) : fexpr__32420.call(null,new cljs.core.Keyword(null,"boards","boards",1912049694)));
+return cljs.core.every_QMARK_(new cljs.core.Keyword(null,"is_goalin","is_goalin",-1291824626),(function (){var fexpr__33523 = cljs.core.deref(com.app.core.game_state);
+return (fexpr__33523.cljs$core$IFn$_invoke$arity$1 ? fexpr__33523.cljs$core$IFn$_invoke$arity$1(new cljs.core.Keyword(null,"boards","boards",1912049694)) : fexpr__33523.call(null,new cljs.core.Keyword(null,"boards","boards",1912049694)));
 })());
 });
 com.app.core.pre_fixed_pos = (function com$app$core$pre_fixed_pos(boards,board_count){
-var G__32421 = board_count;
-switch (G__32421) {
+var G__33524 = board_count;
+switch (G__33524) {
 case (1):
-return new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"div","div",1057191632),(function (){var G__32422 = (function (){var fexpr__32425 = cljs.core.first(boards);
-return (fexpr__32425.cljs$core$IFn$_invoke$arity$1 ? fexpr__32425.cljs$core$IFn$_invoke$arity$1(new cljs.core.Keyword(null,"display-board","display-board",2049877948)) : fexpr__32425.call(null,new cljs.core.Keyword(null,"display-board","display-board",2049877948)));
+return new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"div","div",1057191632),(function (){var G__33525 = (function (){var fexpr__33528 = cljs.core.first(boards);
+return (fexpr__33528.cljs$core$IFn$_invoke$arity$1 ? fexpr__33528.cljs$core$IFn$_invoke$arity$1(new cljs.core.Keyword(null,"display-board","display-board",2049877948)) : fexpr__33528.call(null,new cljs.core.Keyword(null,"display-board","display-board",2049877948)));
 })();
-var G__32423 = (70);
-var G__32424 = (10);
-return (com.app.core.Grid.cljs$core$IFn$_invoke$arity$3 ? com.app.core.Grid.cljs$core$IFn$_invoke$arity$3(G__32422,G__32423,G__32424) : com.app.core.Grid.call(null,G__32422,G__32423,G__32424));
+var G__33526 = (70);
+var G__33527 = (10);
+return (com.app.core.Grid.cljs$core$IFn$_invoke$arity$3 ? com.app.core.Grid.cljs$core$IFn$_invoke$arity$3(G__33525,G__33526,G__33527) : com.app.core.Grid.call(null,G__33525,G__33526,G__33527));
 })()], null);
 
 break;
 case (2):
-return new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"div","div",1057191632),(function (){var G__32426 = (function (){var fexpr__32429 = cljs.core.first(boards);
-return (fexpr__32429.cljs$core$IFn$_invoke$arity$1 ? fexpr__32429.cljs$core$IFn$_invoke$arity$1(new cljs.core.Keyword(null,"display-board","display-board",2049877948)) : fexpr__32429.call(null,new cljs.core.Keyword(null,"display-board","display-board",2049877948)));
+return new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"div","div",1057191632),(function (){var G__33529 = (function (){var fexpr__33532 = cljs.core.first(boards);
+return (fexpr__33532.cljs$core$IFn$_invoke$arity$1 ? fexpr__33532.cljs$core$IFn$_invoke$arity$1(new cljs.core.Keyword(null,"display-board","display-board",2049877948)) : fexpr__33532.call(null,new cljs.core.Keyword(null,"display-board","display-board",2049877948)));
 })();
-var G__32427 = (70);
-var G__32428 = (10);
-return (com.app.core.Grid.cljs$core$IFn$_invoke$arity$3 ? com.app.core.Grid.cljs$core$IFn$_invoke$arity$3(G__32426,G__32427,G__32428) : com.app.core.Grid.call(null,G__32426,G__32427,G__32428));
-})(),(function (){var G__32430 = (function (){var fexpr__32433 = cljs.core.second(boards);
-return (fexpr__32433.cljs$core$IFn$_invoke$arity$1 ? fexpr__32433.cljs$core$IFn$_invoke$arity$1(new cljs.core.Keyword(null,"display-board","display-board",2049877948)) : fexpr__32433.call(null,new cljs.core.Keyword(null,"display-board","display-board",2049877948)));
+var G__33530 = (70);
+var G__33531 = (10);
+return (com.app.core.Grid.cljs$core$IFn$_invoke$arity$3 ? com.app.core.Grid.cljs$core$IFn$_invoke$arity$3(G__33529,G__33530,G__33531) : com.app.core.Grid.call(null,G__33529,G__33530,G__33531));
+})(),(function (){var G__33533 = (function (){var fexpr__33536 = cljs.core.second(boards);
+return (fexpr__33536.cljs$core$IFn$_invoke$arity$1 ? fexpr__33536.cljs$core$IFn$_invoke$arity$1(new cljs.core.Keyword(null,"display-board","display-board",2049877948)) : fexpr__33536.call(null,new cljs.core.Keyword(null,"display-board","display-board",2049877948)));
 })();
-var G__32431 = (70);
-var G__32432 = (210);
-return (com.app.core.Grid.cljs$core$IFn$_invoke$arity$3 ? com.app.core.Grid.cljs$core$IFn$_invoke$arity$3(G__32430,G__32431,G__32432) : com.app.core.Grid.call(null,G__32430,G__32431,G__32432));
+var G__33534 = (70);
+var G__33535 = (210);
+return (com.app.core.Grid.cljs$core$IFn$_invoke$arity$3 ? com.app.core.Grid.cljs$core$IFn$_invoke$arity$3(G__33533,G__33534,G__33535) : com.app.core.Grid.call(null,G__33533,G__33534,G__33535));
 })()], null);
 
 break;
 case (3):
-return new cljs.core.PersistentVector(null, 4, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"div","div",1057191632),(function (){var G__32434 = (function (){var fexpr__32437 = cljs.core.first(boards);
-return (fexpr__32437.cljs$core$IFn$_invoke$arity$1 ? fexpr__32437.cljs$core$IFn$_invoke$arity$1(new cljs.core.Keyword(null,"display-board","display-board",2049877948)) : fexpr__32437.call(null,new cljs.core.Keyword(null,"display-board","display-board",2049877948)));
+return new cljs.core.PersistentVector(null, 4, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"div","div",1057191632),(function (){var G__33537 = (function (){var fexpr__33540 = cljs.core.first(boards);
+return (fexpr__33540.cljs$core$IFn$_invoke$arity$1 ? fexpr__33540.cljs$core$IFn$_invoke$arity$1(new cljs.core.Keyword(null,"display-board","display-board",2049877948)) : fexpr__33540.call(null,new cljs.core.Keyword(null,"display-board","display-board",2049877948)));
 })();
-var G__32435 = (70);
-var G__32436 = (10);
-return (com.app.core.Grid.cljs$core$IFn$_invoke$arity$3 ? com.app.core.Grid.cljs$core$IFn$_invoke$arity$3(G__32434,G__32435,G__32436) : com.app.core.Grid.call(null,G__32434,G__32435,G__32436));
-})(),(function (){var G__32438 = (function (){var fexpr__32441 = cljs.core.second(boards);
-return (fexpr__32441.cljs$core$IFn$_invoke$arity$1 ? fexpr__32441.cljs$core$IFn$_invoke$arity$1(new cljs.core.Keyword(null,"display-board","display-board",2049877948)) : fexpr__32441.call(null,new cljs.core.Keyword(null,"display-board","display-board",2049877948)));
+var G__33538 = (70);
+var G__33539 = (10);
+return (com.app.core.Grid.cljs$core$IFn$_invoke$arity$3 ? com.app.core.Grid.cljs$core$IFn$_invoke$arity$3(G__33537,G__33538,G__33539) : com.app.core.Grid.call(null,G__33537,G__33538,G__33539));
+})(),(function (){var G__33541 = (function (){var fexpr__33544 = cljs.core.second(boards);
+return (fexpr__33544.cljs$core$IFn$_invoke$arity$1 ? fexpr__33544.cljs$core$IFn$_invoke$arity$1(new cljs.core.Keyword(null,"display-board","display-board",2049877948)) : fexpr__33544.call(null,new cljs.core.Keyword(null,"display-board","display-board",2049877948)));
 })();
-var G__32439 = (70);
-var G__32440 = (210);
-return (com.app.core.Grid.cljs$core$IFn$_invoke$arity$3 ? com.app.core.Grid.cljs$core$IFn$_invoke$arity$3(G__32438,G__32439,G__32440) : com.app.core.Grid.call(null,G__32438,G__32439,G__32440));
-})(),(function (){var G__32442 = (function (){var fexpr__32445 = cljs.core.nth.cljs$core$IFn$_invoke$arity$2(boards,(2));
-return (fexpr__32445.cljs$core$IFn$_invoke$arity$1 ? fexpr__32445.cljs$core$IFn$_invoke$arity$1(new cljs.core.Keyword(null,"display-board","display-board",2049877948)) : fexpr__32445.call(null,new cljs.core.Keyword(null,"display-board","display-board",2049877948)));
+var G__33542 = (70);
+var G__33543 = (210);
+return (com.app.core.Grid.cljs$core$IFn$_invoke$arity$3 ? com.app.core.Grid.cljs$core$IFn$_invoke$arity$3(G__33541,G__33542,G__33543) : com.app.core.Grid.call(null,G__33541,G__33542,G__33543));
+})(),(function (){var G__33545 = (function (){var fexpr__33548 = cljs.core.nth.cljs$core$IFn$_invoke$arity$2(boards,(2));
+return (fexpr__33548.cljs$core$IFn$_invoke$arity$1 ? fexpr__33548.cljs$core$IFn$_invoke$arity$1(new cljs.core.Keyword(null,"display-board","display-board",2049877948)) : fexpr__33548.call(null,new cljs.core.Keyword(null,"display-board","display-board",2049877948)));
 })();
-var G__32443 = (70);
-var G__32444 = (410);
-return (com.app.core.Grid.cljs$core$IFn$_invoke$arity$3 ? com.app.core.Grid.cljs$core$IFn$_invoke$arity$3(G__32442,G__32443,G__32444) : com.app.core.Grid.call(null,G__32442,G__32443,G__32444));
+var G__33546 = (70);
+var G__33547 = (410);
+return (com.app.core.Grid.cljs$core$IFn$_invoke$arity$3 ? com.app.core.Grid.cljs$core$IFn$_invoke$arity$3(G__33545,G__33546,G__33547) : com.app.core.Grid.call(null,G__33545,G__33546,G__33547));
 })()], null);
 
 break;
 case (4):
-return new cljs.core.PersistentVector(null, 5, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"div","div",1057191632),(function (){var G__32446 = (function (){var fexpr__32449 = cljs.core.first(boards);
-return (fexpr__32449.cljs$core$IFn$_invoke$arity$1 ? fexpr__32449.cljs$core$IFn$_invoke$arity$1(new cljs.core.Keyword(null,"display-board","display-board",2049877948)) : fexpr__32449.call(null,new cljs.core.Keyword(null,"display-board","display-board",2049877948)));
+return new cljs.core.PersistentVector(null, 5, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"div","div",1057191632),(function (){var G__33549 = (function (){var fexpr__33552 = cljs.core.first(boards);
+return (fexpr__33552.cljs$core$IFn$_invoke$arity$1 ? fexpr__33552.cljs$core$IFn$_invoke$arity$1(new cljs.core.Keyword(null,"display-board","display-board",2049877948)) : fexpr__33552.call(null,new cljs.core.Keyword(null,"display-board","display-board",2049877948)));
 })();
-var G__32447 = (70);
-var G__32448 = (10);
-return (com.app.core.Grid.cljs$core$IFn$_invoke$arity$3 ? com.app.core.Grid.cljs$core$IFn$_invoke$arity$3(G__32446,G__32447,G__32448) : com.app.core.Grid.call(null,G__32446,G__32447,G__32448));
-})(),(function (){var G__32450 = (function (){var fexpr__32453 = cljs.core.second(boards);
-return (fexpr__32453.cljs$core$IFn$_invoke$arity$1 ? fexpr__32453.cljs$core$IFn$_invoke$arity$1(new cljs.core.Keyword(null,"display-board","display-board",2049877948)) : fexpr__32453.call(null,new cljs.core.Keyword(null,"display-board","display-board",2049877948)));
+var G__33550 = (70);
+var G__33551 = (10);
+return (com.app.core.Grid.cljs$core$IFn$_invoke$arity$3 ? com.app.core.Grid.cljs$core$IFn$_invoke$arity$3(G__33549,G__33550,G__33551) : com.app.core.Grid.call(null,G__33549,G__33550,G__33551));
+})(),(function (){var G__33553 = (function (){var fexpr__33556 = cljs.core.second(boards);
+return (fexpr__33556.cljs$core$IFn$_invoke$arity$1 ? fexpr__33556.cljs$core$IFn$_invoke$arity$1(new cljs.core.Keyword(null,"display-board","display-board",2049877948)) : fexpr__33556.call(null,new cljs.core.Keyword(null,"display-board","display-board",2049877948)));
 })();
-var G__32451 = (70);
-var G__32452 = (210);
-return (com.app.core.Grid.cljs$core$IFn$_invoke$arity$3 ? com.app.core.Grid.cljs$core$IFn$_invoke$arity$3(G__32450,G__32451,G__32452) : com.app.core.Grid.call(null,G__32450,G__32451,G__32452));
-})(),(function (){var G__32454 = (function (){var fexpr__32457 = cljs.core.nth.cljs$core$IFn$_invoke$arity$2(boards,(2));
-return (fexpr__32457.cljs$core$IFn$_invoke$arity$1 ? fexpr__32457.cljs$core$IFn$_invoke$arity$1(new cljs.core.Keyword(null,"display-board","display-board",2049877948)) : fexpr__32457.call(null,new cljs.core.Keyword(null,"display-board","display-board",2049877948)));
+var G__33554 = (70);
+var G__33555 = (210);
+return (com.app.core.Grid.cljs$core$IFn$_invoke$arity$3 ? com.app.core.Grid.cljs$core$IFn$_invoke$arity$3(G__33553,G__33554,G__33555) : com.app.core.Grid.call(null,G__33553,G__33554,G__33555));
+})(),(function (){var G__33557 = (function (){var fexpr__33560 = cljs.core.nth.cljs$core$IFn$_invoke$arity$2(boards,(2));
+return (fexpr__33560.cljs$core$IFn$_invoke$arity$1 ? fexpr__33560.cljs$core$IFn$_invoke$arity$1(new cljs.core.Keyword(null,"display-board","display-board",2049877948)) : fexpr__33560.call(null,new cljs.core.Keyword(null,"display-board","display-board",2049877948)));
 })();
-var G__32455 = (270);
-var G__32456 = (10);
-return (com.app.core.Grid.cljs$core$IFn$_invoke$arity$3 ? com.app.core.Grid.cljs$core$IFn$_invoke$arity$3(G__32454,G__32455,G__32456) : com.app.core.Grid.call(null,G__32454,G__32455,G__32456));
-})(),(function (){var G__32458 = (function (){var fexpr__32461 = cljs.core.nth.cljs$core$IFn$_invoke$arity$2(boards,(3));
-return (fexpr__32461.cljs$core$IFn$_invoke$arity$1 ? fexpr__32461.cljs$core$IFn$_invoke$arity$1(new cljs.core.Keyword(null,"display-board","display-board",2049877948)) : fexpr__32461.call(null,new cljs.core.Keyword(null,"display-board","display-board",2049877948)));
+var G__33558 = (270);
+var G__33559 = (10);
+return (com.app.core.Grid.cljs$core$IFn$_invoke$arity$3 ? com.app.core.Grid.cljs$core$IFn$_invoke$arity$3(G__33557,G__33558,G__33559) : com.app.core.Grid.call(null,G__33557,G__33558,G__33559));
+})(),(function (){var G__33561 = (function (){var fexpr__33564 = cljs.core.nth.cljs$core$IFn$_invoke$arity$2(boards,(3));
+return (fexpr__33564.cljs$core$IFn$_invoke$arity$1 ? fexpr__33564.cljs$core$IFn$_invoke$arity$1(new cljs.core.Keyword(null,"display-board","display-board",2049877948)) : fexpr__33564.call(null,new cljs.core.Keyword(null,"display-board","display-board",2049877948)));
 })();
-var G__32459 = (270);
-var G__32460 = (210);
-return (com.app.core.Grid.cljs$core$IFn$_invoke$arity$3 ? com.app.core.Grid.cljs$core$IFn$_invoke$arity$3(G__32458,G__32459,G__32460) : com.app.core.Grid.call(null,G__32458,G__32459,G__32460));
+var G__33562 = (270);
+var G__33563 = (210);
+return (com.app.core.Grid.cljs$core$IFn$_invoke$arity$3 ? com.app.core.Grid.cljs$core$IFn$_invoke$arity$3(G__33561,G__33562,G__33563) : com.app.core.Grid.call(null,G__33561,G__33562,G__33563));
 })()], null);
 
 break;
 case (5):
-return new cljs.core.PersistentVector(null, 6, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"div","div",1057191632),(function (){var G__32462 = (function (){var fexpr__32465 = cljs.core.first(boards);
-return (fexpr__32465.cljs$core$IFn$_invoke$arity$1 ? fexpr__32465.cljs$core$IFn$_invoke$arity$1(new cljs.core.Keyword(null,"display-board","display-board",2049877948)) : fexpr__32465.call(null,new cljs.core.Keyword(null,"display-board","display-board",2049877948)));
+return new cljs.core.PersistentVector(null, 6, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"div","div",1057191632),(function (){var G__33565 = (function (){var fexpr__33568 = cljs.core.first(boards);
+return (fexpr__33568.cljs$core$IFn$_invoke$arity$1 ? fexpr__33568.cljs$core$IFn$_invoke$arity$1(new cljs.core.Keyword(null,"display-board","display-board",2049877948)) : fexpr__33568.call(null,new cljs.core.Keyword(null,"display-board","display-board",2049877948)));
 })();
-var G__32463 = (70);
-var G__32464 = (10);
-return (com.app.core.Grid.cljs$core$IFn$_invoke$arity$3 ? com.app.core.Grid.cljs$core$IFn$_invoke$arity$3(G__32462,G__32463,G__32464) : com.app.core.Grid.call(null,G__32462,G__32463,G__32464));
-})(),(function (){var G__32466 = (function (){var fexpr__32469 = cljs.core.second(boards);
-return (fexpr__32469.cljs$core$IFn$_invoke$arity$1 ? fexpr__32469.cljs$core$IFn$_invoke$arity$1(new cljs.core.Keyword(null,"display-board","display-board",2049877948)) : fexpr__32469.call(null,new cljs.core.Keyword(null,"display-board","display-board",2049877948)));
+var G__33566 = (70);
+var G__33567 = (10);
+return (com.app.core.Grid.cljs$core$IFn$_invoke$arity$3 ? com.app.core.Grid.cljs$core$IFn$_invoke$arity$3(G__33565,G__33566,G__33567) : com.app.core.Grid.call(null,G__33565,G__33566,G__33567));
+})(),(function (){var G__33569 = (function (){var fexpr__33572 = cljs.core.second(boards);
+return (fexpr__33572.cljs$core$IFn$_invoke$arity$1 ? fexpr__33572.cljs$core$IFn$_invoke$arity$1(new cljs.core.Keyword(null,"display-board","display-board",2049877948)) : fexpr__33572.call(null,new cljs.core.Keyword(null,"display-board","display-board",2049877948)));
 })();
-var G__32467 = (70);
-var G__32468 = (210);
-return (com.app.core.Grid.cljs$core$IFn$_invoke$arity$3 ? com.app.core.Grid.cljs$core$IFn$_invoke$arity$3(G__32466,G__32467,G__32468) : com.app.core.Grid.call(null,G__32466,G__32467,G__32468));
-})(),(function (){var G__32470 = (function (){var fexpr__32473 = cljs.core.nth.cljs$core$IFn$_invoke$arity$2(boards,(2));
-return (fexpr__32473.cljs$core$IFn$_invoke$arity$1 ? fexpr__32473.cljs$core$IFn$_invoke$arity$1(new cljs.core.Keyword(null,"display-board","display-board",2049877948)) : fexpr__32473.call(null,new cljs.core.Keyword(null,"display-board","display-board",2049877948)));
+var G__33570 = (70);
+var G__33571 = (210);
+return (com.app.core.Grid.cljs$core$IFn$_invoke$arity$3 ? com.app.core.Grid.cljs$core$IFn$_invoke$arity$3(G__33569,G__33570,G__33571) : com.app.core.Grid.call(null,G__33569,G__33570,G__33571));
+})(),(function (){var G__33573 = (function (){var fexpr__33576 = cljs.core.nth.cljs$core$IFn$_invoke$arity$2(boards,(2));
+return (fexpr__33576.cljs$core$IFn$_invoke$arity$1 ? fexpr__33576.cljs$core$IFn$_invoke$arity$1(new cljs.core.Keyword(null,"display-board","display-board",2049877948)) : fexpr__33576.call(null,new cljs.core.Keyword(null,"display-board","display-board",2049877948)));
 })();
-var G__32471 = (70);
-var G__32472 = (410);
-return (com.app.core.Grid.cljs$core$IFn$_invoke$arity$3 ? com.app.core.Grid.cljs$core$IFn$_invoke$arity$3(G__32470,G__32471,G__32472) : com.app.core.Grid.call(null,G__32470,G__32471,G__32472));
-})(),(function (){var G__32474 = (function (){var fexpr__32477 = cljs.core.nth.cljs$core$IFn$_invoke$arity$2(boards,(3));
-return (fexpr__32477.cljs$core$IFn$_invoke$arity$1 ? fexpr__32477.cljs$core$IFn$_invoke$arity$1(new cljs.core.Keyword(null,"display-board","display-board",2049877948)) : fexpr__32477.call(null,new cljs.core.Keyword(null,"display-board","display-board",2049877948)));
+var G__33574 = (70);
+var G__33575 = (410);
+return (com.app.core.Grid.cljs$core$IFn$_invoke$arity$3 ? com.app.core.Grid.cljs$core$IFn$_invoke$arity$3(G__33573,G__33574,G__33575) : com.app.core.Grid.call(null,G__33573,G__33574,G__33575));
+})(),(function (){var G__33577 = (function (){var fexpr__33580 = cljs.core.nth.cljs$core$IFn$_invoke$arity$2(boards,(3));
+return (fexpr__33580.cljs$core$IFn$_invoke$arity$1 ? fexpr__33580.cljs$core$IFn$_invoke$arity$1(new cljs.core.Keyword(null,"display-board","display-board",2049877948)) : fexpr__33580.call(null,new cljs.core.Keyword(null,"display-board","display-board",2049877948)));
 })();
-var G__32475 = (270);
-var G__32476 = (10);
-return (com.app.core.Grid.cljs$core$IFn$_invoke$arity$3 ? com.app.core.Grid.cljs$core$IFn$_invoke$arity$3(G__32474,G__32475,G__32476) : com.app.core.Grid.call(null,G__32474,G__32475,G__32476));
-})(),(function (){var G__32478 = (function (){var fexpr__32481 = cljs.core.nth.cljs$core$IFn$_invoke$arity$2(boards,(4));
-return (fexpr__32481.cljs$core$IFn$_invoke$arity$1 ? fexpr__32481.cljs$core$IFn$_invoke$arity$1(new cljs.core.Keyword(null,"display-board","display-board",2049877948)) : fexpr__32481.call(null,new cljs.core.Keyword(null,"display-board","display-board",2049877948)));
+var G__33578 = (270);
+var G__33579 = (10);
+return (com.app.core.Grid.cljs$core$IFn$_invoke$arity$3 ? com.app.core.Grid.cljs$core$IFn$_invoke$arity$3(G__33577,G__33578,G__33579) : com.app.core.Grid.call(null,G__33577,G__33578,G__33579));
+})(),(function (){var G__33581 = (function (){var fexpr__33584 = cljs.core.nth.cljs$core$IFn$_invoke$arity$2(boards,(4));
+return (fexpr__33584.cljs$core$IFn$_invoke$arity$1 ? fexpr__33584.cljs$core$IFn$_invoke$arity$1(new cljs.core.Keyword(null,"display-board","display-board",2049877948)) : fexpr__33584.call(null,new cljs.core.Keyword(null,"display-board","display-board",2049877948)));
 })();
-var G__32479 = (270);
-var G__32480 = (210);
-return (com.app.core.Grid.cljs$core$IFn$_invoke$arity$3 ? com.app.core.Grid.cljs$core$IFn$_invoke$arity$3(G__32478,G__32479,G__32480) : com.app.core.Grid.call(null,G__32478,G__32479,G__32480));
+var G__33582 = (270);
+var G__33583 = (210);
+return (com.app.core.Grid.cljs$core$IFn$_invoke$arity$3 ? com.app.core.Grid.cljs$core$IFn$_invoke$arity$3(G__33581,G__33582,G__33583) : com.app.core.Grid.call(null,G__33581,G__33582,G__33583));
 })()], null);
 
 break;
 case (6):
-return new cljs.core.PersistentVector(null, 7, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"div","div",1057191632),(function (){var G__32482 = (function (){var fexpr__32485 = cljs.core.first(boards);
-return (fexpr__32485.cljs$core$IFn$_invoke$arity$1 ? fexpr__32485.cljs$core$IFn$_invoke$arity$1(new cljs.core.Keyword(null,"display-board","display-board",2049877948)) : fexpr__32485.call(null,new cljs.core.Keyword(null,"display-board","display-board",2049877948)));
+return new cljs.core.PersistentVector(null, 7, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"div","div",1057191632),(function (){var G__33585 = (function (){var fexpr__33588 = cljs.core.first(boards);
+return (fexpr__33588.cljs$core$IFn$_invoke$arity$1 ? fexpr__33588.cljs$core$IFn$_invoke$arity$1(new cljs.core.Keyword(null,"display-board","display-board",2049877948)) : fexpr__33588.call(null,new cljs.core.Keyword(null,"display-board","display-board",2049877948)));
 })();
-var G__32483 = (70);
-var G__32484 = (10);
-return (com.app.core.Grid.cljs$core$IFn$_invoke$arity$3 ? com.app.core.Grid.cljs$core$IFn$_invoke$arity$3(G__32482,G__32483,G__32484) : com.app.core.Grid.call(null,G__32482,G__32483,G__32484));
-})(),(function (){var G__32486 = (function (){var fexpr__32489 = cljs.core.second(boards);
-return (fexpr__32489.cljs$core$IFn$_invoke$arity$1 ? fexpr__32489.cljs$core$IFn$_invoke$arity$1(new cljs.core.Keyword(null,"display-board","display-board",2049877948)) : fexpr__32489.call(null,new cljs.core.Keyword(null,"display-board","display-board",2049877948)));
+var G__33586 = (70);
+var G__33587 = (10);
+return (com.app.core.Grid.cljs$core$IFn$_invoke$arity$3 ? com.app.core.Grid.cljs$core$IFn$_invoke$arity$3(G__33585,G__33586,G__33587) : com.app.core.Grid.call(null,G__33585,G__33586,G__33587));
+})(),(function (){var G__33589 = (function (){var fexpr__33592 = cljs.core.second(boards);
+return (fexpr__33592.cljs$core$IFn$_invoke$arity$1 ? fexpr__33592.cljs$core$IFn$_invoke$arity$1(new cljs.core.Keyword(null,"display-board","display-board",2049877948)) : fexpr__33592.call(null,new cljs.core.Keyword(null,"display-board","display-board",2049877948)));
 })();
-var G__32487 = (70);
-var G__32488 = (210);
-return (com.app.core.Grid.cljs$core$IFn$_invoke$arity$3 ? com.app.core.Grid.cljs$core$IFn$_invoke$arity$3(G__32486,G__32487,G__32488) : com.app.core.Grid.call(null,G__32486,G__32487,G__32488));
-})(),(function (){var G__32490 = (function (){var fexpr__32493 = cljs.core.nth.cljs$core$IFn$_invoke$arity$2(boards,(2));
-return (fexpr__32493.cljs$core$IFn$_invoke$arity$1 ? fexpr__32493.cljs$core$IFn$_invoke$arity$1(new cljs.core.Keyword(null,"display-board","display-board",2049877948)) : fexpr__32493.call(null,new cljs.core.Keyword(null,"display-board","display-board",2049877948)));
+var G__33590 = (70);
+var G__33591 = (210);
+return (com.app.core.Grid.cljs$core$IFn$_invoke$arity$3 ? com.app.core.Grid.cljs$core$IFn$_invoke$arity$3(G__33589,G__33590,G__33591) : com.app.core.Grid.call(null,G__33589,G__33590,G__33591));
+})(),(function (){var G__33593 = (function (){var fexpr__33596 = cljs.core.nth.cljs$core$IFn$_invoke$arity$2(boards,(2));
+return (fexpr__33596.cljs$core$IFn$_invoke$arity$1 ? fexpr__33596.cljs$core$IFn$_invoke$arity$1(new cljs.core.Keyword(null,"display-board","display-board",2049877948)) : fexpr__33596.call(null,new cljs.core.Keyword(null,"display-board","display-board",2049877948)));
 })();
-var G__32491 = (70);
-var G__32492 = (410);
-return (com.app.core.Grid.cljs$core$IFn$_invoke$arity$3 ? com.app.core.Grid.cljs$core$IFn$_invoke$arity$3(G__32490,G__32491,G__32492) : com.app.core.Grid.call(null,G__32490,G__32491,G__32492));
-})(),(function (){var G__32494 = (function (){var fexpr__32497 = cljs.core.nth.cljs$core$IFn$_invoke$arity$2(boards,(3));
-return (fexpr__32497.cljs$core$IFn$_invoke$arity$1 ? fexpr__32497.cljs$core$IFn$_invoke$arity$1(new cljs.core.Keyword(null,"display-board","display-board",2049877948)) : fexpr__32497.call(null,new cljs.core.Keyword(null,"display-board","display-board",2049877948)));
+var G__33594 = (70);
+var G__33595 = (410);
+return (com.app.core.Grid.cljs$core$IFn$_invoke$arity$3 ? com.app.core.Grid.cljs$core$IFn$_invoke$arity$3(G__33593,G__33594,G__33595) : com.app.core.Grid.call(null,G__33593,G__33594,G__33595));
+})(),(function (){var G__33597 = (function (){var fexpr__33600 = cljs.core.nth.cljs$core$IFn$_invoke$arity$2(boards,(3));
+return (fexpr__33600.cljs$core$IFn$_invoke$arity$1 ? fexpr__33600.cljs$core$IFn$_invoke$arity$1(new cljs.core.Keyword(null,"display-board","display-board",2049877948)) : fexpr__33600.call(null,new cljs.core.Keyword(null,"display-board","display-board",2049877948)));
 })();
-var G__32495 = (270);
-var G__32496 = (10);
-return (com.app.core.Grid.cljs$core$IFn$_invoke$arity$3 ? com.app.core.Grid.cljs$core$IFn$_invoke$arity$3(G__32494,G__32495,G__32496) : com.app.core.Grid.call(null,G__32494,G__32495,G__32496));
-})(),(function (){var G__32498 = (function (){var fexpr__32501 = cljs.core.nth.cljs$core$IFn$_invoke$arity$2(boards,(4));
-return (fexpr__32501.cljs$core$IFn$_invoke$arity$1 ? fexpr__32501.cljs$core$IFn$_invoke$arity$1(new cljs.core.Keyword(null,"display-board","display-board",2049877948)) : fexpr__32501.call(null,new cljs.core.Keyword(null,"display-board","display-board",2049877948)));
+var G__33598 = (270);
+var G__33599 = (10);
+return (com.app.core.Grid.cljs$core$IFn$_invoke$arity$3 ? com.app.core.Grid.cljs$core$IFn$_invoke$arity$3(G__33597,G__33598,G__33599) : com.app.core.Grid.call(null,G__33597,G__33598,G__33599));
+})(),(function (){var G__33601 = (function (){var fexpr__33604 = cljs.core.nth.cljs$core$IFn$_invoke$arity$2(boards,(4));
+return (fexpr__33604.cljs$core$IFn$_invoke$arity$1 ? fexpr__33604.cljs$core$IFn$_invoke$arity$1(new cljs.core.Keyword(null,"display-board","display-board",2049877948)) : fexpr__33604.call(null,new cljs.core.Keyword(null,"display-board","display-board",2049877948)));
 })();
-var G__32499 = (270);
-var G__32500 = (210);
-return (com.app.core.Grid.cljs$core$IFn$_invoke$arity$3 ? com.app.core.Grid.cljs$core$IFn$_invoke$arity$3(G__32498,G__32499,G__32500) : com.app.core.Grid.call(null,G__32498,G__32499,G__32500));
-})(),(function (){var G__32502 = (function (){var fexpr__32505 = cljs.core.nth.cljs$core$IFn$_invoke$arity$2(boards,(5));
-return (fexpr__32505.cljs$core$IFn$_invoke$arity$1 ? fexpr__32505.cljs$core$IFn$_invoke$arity$1(new cljs.core.Keyword(null,"display-board","display-board",2049877948)) : fexpr__32505.call(null,new cljs.core.Keyword(null,"display-board","display-board",2049877948)));
+var G__33602 = (270);
+var G__33603 = (210);
+return (com.app.core.Grid.cljs$core$IFn$_invoke$arity$3 ? com.app.core.Grid.cljs$core$IFn$_invoke$arity$3(G__33601,G__33602,G__33603) : com.app.core.Grid.call(null,G__33601,G__33602,G__33603));
+})(),(function (){var G__33605 = (function (){var fexpr__33608 = cljs.core.nth.cljs$core$IFn$_invoke$arity$2(boards,(5));
+return (fexpr__33608.cljs$core$IFn$_invoke$arity$1 ? fexpr__33608.cljs$core$IFn$_invoke$arity$1(new cljs.core.Keyword(null,"display-board","display-board",2049877948)) : fexpr__33608.call(null,new cljs.core.Keyword(null,"display-board","display-board",2049877948)));
 })();
-var G__32503 = (270);
-var G__32504 = (410);
-return (com.app.core.Grid.cljs$core$IFn$_invoke$arity$3 ? com.app.core.Grid.cljs$core$IFn$_invoke$arity$3(G__32502,G__32503,G__32504) : com.app.core.Grid.call(null,G__32502,G__32503,G__32504));
+var G__33606 = (270);
+var G__33607 = (410);
+return (com.app.core.Grid.cljs$core$IFn$_invoke$arity$3 ? com.app.core.Grid.cljs$core$IFn$_invoke$arity$3(G__33605,G__33606,G__33607) : com.app.core.Grid.call(null,G__33605,G__33606,G__33607));
 })()], null);
 
 break;
 default:
-throw (new Error(["No matching clause: ",cljs.core.str.cljs$core$IFn$_invoke$arity$1(G__32421)].join('')));
+throw (new Error(["No matching clause: ",cljs.core.str.cljs$core$IFn$_invoke$arity$1(G__33524)].join('')));
 
 }
 });
@@ -187,21 +188,24 @@ return com.app.core.Row(item,row,start_top_pos,start_left_pos);
 }),board)], null);
 });
 com.app.core.All_Board = (function com$app$core$All_Board(){
-var boards = (function (){var fexpr__32506 = cljs.core.deref(com.app.core.game_state);
-return (fexpr__32506.cljs$core$IFn$_invoke$arity$1 ? fexpr__32506.cljs$core$IFn$_invoke$arity$1(new cljs.core.Keyword(null,"boards","boards",1912049694)) : fexpr__32506.call(null,new cljs.core.Keyword(null,"boards","boards",1912049694)));
+var boards = (function (){var fexpr__33609 = cljs.core.deref(com.app.core.game_state);
+return (fexpr__33609.cljs$core$IFn$_invoke$arity$1 ? fexpr__33609.cljs$core$IFn$_invoke$arity$1(new cljs.core.Keyword(null,"boards","boards",1912049694)) : fexpr__33609.call(null,new cljs.core.Keyword(null,"boards","boards",1912049694)));
 })();
-var div = com.app.core.pre_fixed_pos(boards,cljs.core.count((function (){var fexpr__32508 = (function (){var G__32509 = cljs.core.deref(com.app.core.level);
-return (com.app.stage.stages.cljs$core$IFn$_invoke$arity$1 ? com.app.stage.stages.cljs$core$IFn$_invoke$arity$1(G__32509) : com.app.stage.stages.call(null,G__32509));
+var div = com.app.core.pre_fixed_pos(boards,cljs.core.count((function (){var fexpr__33611 = (function (){var G__33612 = cljs.core.deref(com.app.core.level);
+return (com.app.stage.stages.cljs$core$IFn$_invoke$arity$1 ? com.app.stage.stages.cljs$core$IFn$_invoke$arity$1(G__33612) : com.app.stage.stages.call(null,G__33612));
 })();
-return (fexpr__32508.cljs$core$IFn$_invoke$arity$1 ? fexpr__32508.cljs$core$IFn$_invoke$arity$1(new cljs.core.Keyword(null,"maps","maps",-1711561134)) : fexpr__32508.call(null,new cljs.core.Keyword(null,"maps","maps",-1711561134)));
+return (fexpr__33611.cljs$core$IFn$_invoke$arity$1 ? fexpr__33611.cljs$core$IFn$_invoke$arity$1(new cljs.core.Keyword(null,"maps","maps",-1711561134)) : fexpr__33611.call(null,new cljs.core.Keyword(null,"maps","maps",-1711561134)));
 })()));
 return div;
 });
 com.app.core.Title = (function com$app$core$Title(){
-return new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"div.title","div.title",-1929547732),new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"p","p",151049309),new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"strong","strong",269529000),new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"style","style",-496642736),new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"color","color",1011675173),"#474787"], null)], null),"PARALLEL WOARD"], null)], null),new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"p","p",151049309),new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"style","style",-496642736),new cljs.core.PersistentArrayMap(null, 4, [new cljs.core.Keyword(null,"color","color",1011675173),"#474787",new cljs.core.Keyword(null,"position","position",-2011731912),new cljs.core.Keyword(null,"absolute","absolute",1655386478),new cljs.core.Keyword(null,"top","top",-1856271961),new cljs.core.Keyword(null,"500px","500px",-177572505),new cljs.core.Keyword(null,"left","left",-399115937),new cljs.core.Keyword(null,"10px","10px",-859606082)], null)], null),["Your Answer : ",cljs.core.str.cljs$core$IFn$_invoke$arity$1(cljs.core.deref(com.app.core.input))].join('')], null)], null);
+return new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"div.title","div.title",-1929547732),new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"p","p",151049309),new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"strong","strong",269529000),new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"style","style",-496642736),new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"color","color",1011675173),"#474787"], null)], null),"PARALLEL WOARD    "], null),new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"a","a",-2123407586),new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null,"style","style",-496642736),new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null,"color","color",1011675173),"#474787",new cljs.core.Keyword(null,"position","position",-2011731912),new cljs.core.Keyword(null,"flex","flex",-1425124628)], null),new cljs.core.Keyword(null,"href","href",-793805698),"https://github.com/Lee-WonJun/Parallel-Woard"], null),"How to play"], null)], null),new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"p","p",151049309),new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"style","style",-496642736),new cljs.core.PersistentArrayMap(null, 4, [new cljs.core.Keyword(null,"color","color",1011675173),"#474787",new cljs.core.Keyword(null,"position","position",-2011731912),new cljs.core.Keyword(null,"absolute","absolute",1655386478),new cljs.core.Keyword(null,"top","top",-1856271961),new cljs.core.Keyword(null,"500px","500px",-177572505),new cljs.core.Keyword(null,"left","left",-399115937),new cljs.core.Keyword(null,"10px","10px",-859606082)], null)], null),["Your Answer : ",cljs.core.str.cljs$core$IFn$_invoke$arity$1(cljs.core.deref(com.app.core.input))].join('')], null)], null);
+});
+com.app.core.Adfit = (function com$app$core$Adfit(){
+return new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"div.ad","div.ad",-1663717993),new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"style","style",-496642736),new cljs.core.PersistentArrayMap(null, 3, [new cljs.core.Keyword(null,"position","position",-2011731912),new cljs.core.Keyword(null,"fixed","fixed",-562004358),new cljs.core.Keyword(null,"bottom","bottom",-1550509018),new cljs.core.Keyword(null,"0px","0px",-576744978),new cljs.core.Keyword(null,"z-index","z-index",1892827090),(999)], null)], null),new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,">",">",-555517146),module$node_modules$react_adfit_web_component$dist$react_adfit_web_component.default,new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"adUnit","adUnit",144069371),"DAN-Ju5YcfYb9l021EIO"], null)], null)], null);
 });
 com.app.core.Game_screen = (function com$app$core$Game_screen(){
-return new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"div.screen","div.screen",1429371602),com.app.core.Title(),com.app.core.All_Board()], null);
+return new cljs.core.PersistentVector(null, 4, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"div.screen","div.screen",1429371602),com.app.core.Title(),com.app.core.All_Board(),com.app.core.Adfit()], null);
 });
 /**
  * Given a `keycode`, execute function `f` 
@@ -232,8 +236,8 @@ alert(["Clear:",cljs.core.str.cljs$core$IFn$_invoke$arity$1(cljs.core.deref(com.
 
 cljs.core.swap_BANG_.cljs$core$IFn$_invoke$arity$2(com.app.core.level,cljs.core.inc);
 
-if(cljs.core.truth_((function (){var G__32510 = cljs.core.deref(com.app.core.level);
-return (com.app.stage.stages.cljs$core$IFn$_invoke$arity$1 ? com.app.stage.stages.cljs$core$IFn$_invoke$arity$1(G__32510) : com.app.stage.stages.call(null,G__32510));
+if(cljs.core.truth_((function (){var G__33613 = cljs.core.deref(com.app.core.level);
+return (com.app.stage.stages.cljs$core$IFn$_invoke$arity$1 ? com.app.stage.stages.cljs$core$IFn$_invoke$arity$1(G__33613) : com.app.stage.stages.call(null,G__33613));
 })())){
 com.app.core.reset_stage();
 
@@ -258,8 +262,8 @@ cljs.core.reset_BANG_(com.app.core.input,cljs.core.PersistentVector.EMPTY);
 return com.app.core.update_render();
 });
 com.app.core.user_undo = (function com$app$core$user_undo(){
-cljs.core.swap_BANG_.cljs$core$IFn$_invoke$arity$2(com.app.core.input,(function (p1__32511_SHARP_){
-return cljs.core.drop_last.cljs$core$IFn$_invoke$arity$2((1),p1__32511_SHARP_);
+cljs.core.swap_BANG_.cljs$core$IFn$_invoke$arity$2(com.app.core.input,(function (p1__33614_SHARP_){
+return cljs.core.drop_last.cljs$core$IFn$_invoke$arity$2((1),p1__33614_SHARP_);
 }));
 
 return com.app.core.update_render();
@@ -277,17 +281,13 @@ return com.app.core.user_move(new cljs.core.Keyword(null,"down","down",156524557
 return com.app.core.user_undo();
 }),goog.events.KeyCodes.BACKSPACE,(function (){
 return com.app.core.user_reset();
-}),goog.events.KeyCodes.A,(function (){
-return alert((function (){var fexpr__32512 = cljs.core.deref(com.app.core.game_state);
-return (fexpr__32512.cljs$core$IFn$_invoke$arity$1 ? fexpr__32512.cljs$core$IFn$_invoke$arity$1(new cljs.core.Keyword(null,"answer","answer",-742633163)) : fexpr__32512.call(null,new cljs.core.Keyword(null,"answer","answer",-742633163)));
-})());
 }),goog.events.KeyCodes.N,(function (){
 alert(["Pass ",cljs.core.str.cljs$core$IFn$_invoke$arity$1(cljs.core.deref(com.app.core.level))].join(''));
 
 cljs.core.swap_BANG_.cljs$core$IFn$_invoke$arity$2(com.app.core.level,cljs.core.inc);
 
-if(cljs.core.truth_((function (){var G__32513 = cljs.core.deref(com.app.core.level);
-return (com.app.stage.stages.cljs$core$IFn$_invoke$arity$1 ? com.app.stage.stages.cljs$core$IFn$_invoke$arity$1(G__32513) : com.app.stage.stages.call(null,G__32513));
+if(cljs.core.truth_((function (){var G__33615 = cljs.core.deref(com.app.core.level);
+return (com.app.stage.stages.cljs$core$IFn$_invoke$arity$1 ? com.app.stage.stages.cljs$core$IFn$_invoke$arity$1(G__33615) : com.app.stage.stages.call(null,G__33615));
 })())){
 com.app.core.reset_stage();
 
